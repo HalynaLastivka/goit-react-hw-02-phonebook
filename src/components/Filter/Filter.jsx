@@ -7,11 +7,8 @@ export default class Filter extends Component {
 
   onhandleChangeFilter = event => {
     const { value } = event.target;
-
-    // Оновлюємо стан компонента
     this.setState({ filter: value });
 
-    // Викликаємо функцію filterList через props
     this.props.filterList(value);
   };
 
